@@ -160,7 +160,7 @@ function Invoke-psake {
         Build Succeeded!
 
         ----------------------------------------------------------------------
-        Build Time Report
+        Execution Time Report
         ----------------------------------------------------------------------
         Name    Duration
         ----    --------
