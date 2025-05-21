@@ -60,8 +60,8 @@ function WriteTaskTimeSummary($invokePsakeDuration) {
                 $inclusive = Get-InclusiveDuration -taskName $taskName -visited $visited
 
                 $branch = if ($prefix -eq "") { "" }
-                          elseif ($isLast) { "╚═ " }
-                          else { "╠═ " }
+                            elseif ($isLast) { "╚═ " }
+                            else { "╠═ " }
 
                 $line = "{0}{1,-30} {2,-16} {3,-16}" -f $prefix, $branch + $taskName, $exclusive.ToString("hh\:mm\:ss\.fff"), $inclusive.ToString("hh\:mm\:ss\.fff")
                 WriteOutput $line
